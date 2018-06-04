@@ -2,7 +2,7 @@ fun main(args: Array<String>) {
 
     val original = "kotlin"
     val addPlus = addPlus(original)
-    val addPlus2 = addPlus(str1 = original, str2 = original)
+    val addPlus2 = addPlus(str2 = original, str1 = original)
     val addDefault = addDefault()
 
     println(addPlus)

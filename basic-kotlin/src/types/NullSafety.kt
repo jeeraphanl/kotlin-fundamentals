@@ -8,6 +8,8 @@ fun main(args: Array<String>) {
 
     nameNullable?.let {
         println("$nameNullable")
+    } ?: kotlin.run {
+
     }
 
     println("$nameNotNull")

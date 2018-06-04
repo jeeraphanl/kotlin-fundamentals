@@ -9,9 +9,13 @@ fun main(args: Array<String>) {
     val arrayOfNulls = arrayOfNulls<Int>(3)
 
     // create an array
-    val arrayOf = arrayOf("kotlin", 1)
-    val arrayOfType = arrayOf<String>("kotlin", "java")
+    val array = arrayOf("kotlin", 1)
+    val arrayType = arrayOf<String>("kotlin", "java")
 
-    arrayOf[0] = "new kotlin"
-    arrayOfType[0] = "new java"
+    array[0] = "new kotlin"
+    arrayType[0] = "new java"
+
+    // cannot add more value
+    //array.add()
+    //arrayType.add()
 }

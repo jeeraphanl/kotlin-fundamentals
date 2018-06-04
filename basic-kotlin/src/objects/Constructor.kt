@@ -1,6 +1,5 @@
 
 class Dog {
-
     var name = ""
 
     constructor(name: String) {

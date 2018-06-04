@@ -10,7 +10,7 @@ val result = complexFunctionCall()
 const val CONSTANT = "top-level constant"
 
 object Constants {
-    const  val CONSTANT2 = "object constant"
+    const  val CONSTANT2 = "objects constant"
 }
 
 val foo = Constants.CONSTANT2
@@ -35,21 +35,21 @@ So, for val we can assign the return value from a function as it's value because
 
 const val is set at compile time. So we cannot call and execute a function to get it's value set
 
-However, const val only works at the top level and in classes declared with object not with regular class declared with class
+However, const val only works at the top level and in classes declared with objects not with regular class declared with class
 
-So, we can use this to create a file or object that contains only constants and import them one-by-one
+So, we can use this to create a file or objects that contains only constants and import them one-by-one
 
 Kotlin does not have a concept of class level constants
 
-To define constants inside a class you have to wrap them into a companion object
+To define constants inside a class you have to wrap them into a companion objects
 
-The basic difference between companion objects and regular object is as follows
+The basic difference between companion objects and regular objects is as follows
 
-Companion object are initialized from the static constructor of the containing class. that is, they are created when the object is created.
+Companion objects are initialized from the static constructor of the containing class. that is, they are created when the objects is created.
 
-Plain objects are initialized lazily on the first access to that object. that is, when they are first used.
+Plain objects are initialized lazily on the first access to that objects. that is, when they are first used.
 
-There is more, but all that you need to know is to wrap constanis in classes inside a companion object.
+There is more, but all that you need to know is to wrap constanis in classes inside a companion objects.
 
 
  */

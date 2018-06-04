@@ -21,4 +21,8 @@ fun main(args: Array<String>) {
     intArrayList.forEach {
         println("$it")
     }
+
+    val arrayList = arrayListOf("a", "b", "c")
+    // arralyList cannot init with multitype
+    //val arrayList = arrayListOf("a", "b", "c" 1)
 }

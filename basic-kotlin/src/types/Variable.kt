@@ -18,3 +18,5 @@ fun main(args: Array<String>) {
     numberVar = 5
     println("numberVar: $numberVar")
 }
+
+// forgot lateinit var

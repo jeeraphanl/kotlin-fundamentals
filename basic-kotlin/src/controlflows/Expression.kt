@@ -2,7 +2,7 @@ fun main(args: Array<String>) {
 
     readLine()?.let {
 
-        val age = when(it.toInt()) {
+        val age = when("2".toInt()) {
             1, 2, 3 -> {
                 "my age is 1 or 2"
             }
@@ -19,4 +19,8 @@ fun main(args: Array<String>) {
 
         println(age)
     }
+}
+
+fun x(): String {
+    return ""
 }

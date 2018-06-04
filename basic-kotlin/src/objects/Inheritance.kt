@@ -3,10 +3,6 @@
 interface ShapeInterface {
 
     fun getArea(): Int
-
-    fun getArea2() {
-        println("why interface can have concrete method")
-    }
 }
 
 open class Shape : ShapeInterface {

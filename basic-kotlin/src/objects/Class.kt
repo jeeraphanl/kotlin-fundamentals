@@ -18,12 +18,19 @@ class User {
         }
         set(value) {
             println("Set lastName")
-            field = value
+            if (value.isNotEmpty()) {
+                field = value
+            }
         }
 
     fun getFullName(): String {
         return "$firstName $lastName "
     }
+}
+
+class UserProperties {
+    var firstName: String? = null
+    val lastName: String? = null
 }
 
 fun main(args: Array<String>) {
@@ -33,4 +40,8 @@ fun main(args: Array<String>) {
     println(user.firstName)
     println(user.lastName)
     println(user.getFullName())
+
+    val userProperties = UserProperties()
+    userProperties.firstName = "setter"
+    //userProperties.last = "setter" // cannot reassign becoause lastName is only getter (val)
 }
