@@ -1,22 +1,28 @@
 fun main(args: Array<String>) {
 
-    // continue
-    for (count in 1..10) {
+    /**
+     * Continue
+     */
+    for (count in 1..5) {
         if (count == 4) {
             continue
         }
-        println(count)
+        println("count $count")
     }
 
-    // break
-    for (count in 1..10) {
-        if (count == 7) {
+    /**
+     * Break
+     */
+    for (count in 1..5) {
+        if (count == 3) {
             break
         }
-        println(count)
+        println("break $count")
     }
 
-    // jump loop
+    /**
+     * Jump loop
+     */
     firstLoop@ for (count in 1..5) {
 
         secondLoop@ for (count2 in 1..5) {
