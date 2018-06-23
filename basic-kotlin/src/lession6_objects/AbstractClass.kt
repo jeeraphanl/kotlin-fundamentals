@@ -40,3 +40,7 @@ fun main(args: Array<String>) {
  * Can make abstract method like interface
  * Can make concrete method
  */
+
+/**
+ * Use an abstract class anytime you cannot complete a class
+*/

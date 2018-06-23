@@ -22,11 +22,11 @@ fun main(args: Array<String>) {
         secondLoop@ for (count2 in 1..5) {
 
             if (count == 3) {
-                return@firstLoop
+                break@firstLoop
             }
 
             if (count2 == 2) {
-                return@secondLoop
+                break@secondLoop
             }
 
             println("count: $count | count2: $count2")

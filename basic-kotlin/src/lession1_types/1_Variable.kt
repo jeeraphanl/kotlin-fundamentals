@@ -12,11 +12,9 @@ fun main(args: Array<String>) {
     println("typeInferredInt: $typeInferredInt")
     //numberVal = 6 compilation error
 
-    //types
+    //variable
     var numberVar = 0
     println("numberVar: $numberVar")
     numberVar = 5
     println("numberVar: $numberVar")
 }
-
-// forgot lateinit var
