@@ -8,5 +8,5 @@ object Cache {
 }
 
 /**
- * Cannot Inheritance lession6_objects class
+ * Cannot Inheritance lesson6_objects class
  */

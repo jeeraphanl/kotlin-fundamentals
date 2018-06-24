@@ -1,6 +1,13 @@
 fun main(args: Array<String>) {
 
-    val stringArrayList = ArrayList<String>()
+    /**
+     * ArrayList
+     * 1. Mutable
+     * 2. Not Fixed size
+     * 3. Read and Write
+     */
+
+    val stringArrayList = ArrayList<Any>()
     val intArrayList = ArrayList<Int>()
 
     stringArrayList.add("java")
@@ -15,14 +22,18 @@ fun main(args: Array<String>) {
     println("[]: ${intArrayList[0]}")
 
     stringArrayList.forEach {
-        println("$it")
+        println(it)
     }
 
     intArrayList.forEach {
-        println("$it")
+        println(it)
     }
 
     val arrayList = arrayListOf("a", "b", "c")
-    // arralyList cannot init with multitype
+    // arralyList cannot init with multiple type
     //val arrayList = arrayListOf("a", "b", "c" 1)
+
+    arrayList.forEach {
+        println(it)
+    }
 }
