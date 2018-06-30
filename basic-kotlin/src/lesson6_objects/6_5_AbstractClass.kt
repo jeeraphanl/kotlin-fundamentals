@@ -1,36 +1,36 @@
 
-abstract class Player {
+abstract class BasePlayer {
 
-    abstract fun initPlayer(string: String)
+    abstract fun init()
 
     open fun play() {
-        println("Player play")
+        println("base player play")
     }
 
     open fun stop() {
-        println("Player stop")
+        println("base player stop")
     }
 }
 
-class MoviePlayer : Player() {
+class MoviePlayer : BasePlayer() {
 
-    override fun initPlayer(playName: String) {
-        println("initPlayer: $playName")
+    override fun init() {
+        println("init movie player")
     }
 
     override fun play() {
-        println("MoviePlayer play")
+        println("movie player play")
     }
 
     override fun stop() {
-        println("MoviePlayer stop")
+        println("movie player stop")
     }
 }
 
 fun main(args: Array<String>) {
 
     val player = MoviePlayer()
-    player.initPlayer("Movie")
+    player.init()
     player.play()
     player.stop()
 }

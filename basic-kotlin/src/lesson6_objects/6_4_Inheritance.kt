@@ -1,18 +1,14 @@
-
-// interface
-interface ShapeInterface {
-
-    fun getArea(): Int
+/**
+ * Base class
+ */
+open class Shape {
+    open fun getArea(): Int = 0
 }
 
-open class Shape : ShapeInterface {
-
-    override fun getArea(): Int = 0
-    // open fun getArea(): Int = 0
-    // override final fun getArea(): Int = 0
-}
-
-class Square(private val width: Int) : Shape() { // inheritance
+/**
+ * Inheritance
+ */
+class Square(private val width: Int) : Shape() {
 
     // overriding
     override fun getArea(): Int {
@@ -20,7 +16,10 @@ class Square(private val width: Int) : Shape() { // inheritance
     }
 }
 
-class Rectangle(private val width: Int, private val height: Int) : Shape() { // inheritance
+/**
+ * Inheritance
+ */
+class Rectangle(private val width: Int, private val height: Int) : Shape() {
 
     // overriding
     override fun getArea(): Int {
@@ -33,11 +32,13 @@ fun main(args: Array<String>) {
     val square = Square(4)
     val rectangle = Rectangle(3, 5)
 
-    // polymorphism
     printArea(square)
     printArea(rectangle)
 }
 
+/**
+ * Polymorphism
+ */
 fun printArea(shap: Shape) {
 
     println(shap.getArea())

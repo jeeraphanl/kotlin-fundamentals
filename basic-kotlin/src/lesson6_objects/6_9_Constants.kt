@@ -10,7 +10,7 @@ val result = complexFunctionCall()
 const val CONSTANT = "top-level constant"
 
 object Constants {
-    const  val CONSTANT2 = "lesson6_objects constant"
+    const  val CONSTANT2 = "constant inside object"
 }
 
 val foo = Constants.CONSTANT2
