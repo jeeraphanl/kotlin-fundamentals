@@ -1,13 +1,13 @@
 import java.util.*
 
 fun main(args: Array<String>) {
-    println("kotlin".toPlus())
+    println("kotlin".addPlus())
 
     val today = Date()
     println("Today is Friday: ${today.isFriday()}")
 }
 
-fun String.toPlus(): String {
+fun String.addPlus(): String {
     return this + "+"
 }
 
