@@ -1,6 +1,11 @@
-
+/**
+ * Assign value in compile time
+ */
 const val rocks = 3
 
+/**
+ * Assign value in runtime
+ */
 val number = 5
 
 fun complexFunctionCall() {}
@@ -9,15 +14,39 @@ val result = complexFunctionCall()
 
 const val CONSTANT = "top-level constant"
 
-object Constants {
-    const  val CONSTANT2 = "constant inside object"
+interface SampleInterface {
+    fun sameple()
 }
 
-val foo = Constants.CONSTANT2
+object ObjectClass : SampleInterface {
+    const  val CONSTANT = "constant inside object"
 
-class MyClass {
-    companion object {
-        const val CONSTANT2 = "constant inside companion"
+    interface ObjectInterface {
+
+    }
+
+    override fun sameple() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+}
+val objectClass = ObjectClass.sameple()
+
+class CompanionObject : SampleInterface {
+
+    companion object : SampleInterface {
+        const val CONSTANT = "constant inside companion"
+
+        interface CompanionObject {
+
+        }
+
+        override fun sameple() {
+            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        }
+    }
+
+    override fun sameple() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }
 

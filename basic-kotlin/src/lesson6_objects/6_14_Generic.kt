@@ -30,8 +30,8 @@ fun main(args: Array<String>) {
 * Generic In and Out
 */
 
-open class BaseClass()
-class SubClass : BaseClass()
+open class BaseClass
+class SubClass1 : BaseClass()
 class SubClass2 : BaseClass()
 
 class Jeeraphan<T: BaseClass>(val gender: T)
